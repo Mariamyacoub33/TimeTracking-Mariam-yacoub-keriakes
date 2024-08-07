@@ -1,0 +1,97 @@
+.backdiv{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(12, 96%, 73%);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.frontdiv{
+    width: 100%;
+    height: 80%;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.frontdiv:hover{
+    background-color: hsl(238, 33%, 36%);
+    }
+
+.backdiv>img{
+    width: 40px;
+    height: 40px;
+position: relative;
+}
+
+.topdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label{
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+}
+
+h2{
+    font-family: 'Rubik';
+    font-weight: lighter;
+    font-size: 32px;
+    color: white;
+}
+
+span{
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-size: 9px;
+    color: rgb(190, 185, 185);
+}
+
+.iconellipsis{
+width: 10px;
+height: 3px;
+color: hsl(235, 10%, 56%);
+cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    .backdiv{
+        height: 100px;
+    }
+
+    .frontdiv{
+        height: 70px;
+        justify-content: space-between;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .topdiv{
+        height: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .botdivNC{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
